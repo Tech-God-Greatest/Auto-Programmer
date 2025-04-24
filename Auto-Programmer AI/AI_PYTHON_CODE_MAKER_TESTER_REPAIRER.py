@@ -64,6 +64,7 @@ def generate_code_and_filename(user_instruction: str) -> tuple[str, str]:
         "Format your output like this:\n\n"
         "<filename>\n<code>\n\n"
         "No markdown formatting. Do not include explanations."
+        "Dont put ''' these syntax before or after the code"
     )
 
     chat_completion = groq_client.chat.completions.create(
